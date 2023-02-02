@@ -1,0 +1,48 @@
+footer {
+  background-color: black;
+  width: 100%;
+}
+
+.informacoes {
+  display: flex;
+  color: white;
+  padding: 100px 20px;
+  justify-content: space-between;
+}
+
+.informacoes img {
+  width: auto;
+  height: 100px;
+}
+
+.informacoes div {
+  width: 100%;
+}
+
+.informacoes p {
+  font-size: 16px;
+}
+
+.direitoautoral {
+  color: white;
+  text-align: center;
+  padding: 40px 50px;
+}
+
+@media screen and (max-width: 768px){
+  .informacoes {
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+  }
+
+  .informacoes div {
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer {
+  background-color: black;
+  width: 457px;
+}
+}

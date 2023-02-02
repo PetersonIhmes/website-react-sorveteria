@@ -1,0 +1,151 @@
+.secaobanner {
+  height: 90vh;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textobanner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 30px;
+  position: absolute;
+}
+.secaobanner img {
+	position: relative;
+}
+
+.textobanner h1 {
+  font-size: 100px;
+  color: white;
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.secaonossossabores,
+.secaonossoseventos,
+.secaosobrenos {
+  display: flex;
+}
+
+.secaonossossabores img,
+.secaonossoseventos img,
+.secaosobrenos img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+}
+
+.textosecaonossossabores,
+.textosecaonossoseventos,
+.textosecaosobrenos {
+  width: 50%;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textosecaonossossabores h2,
+.textosecaonossoseventos h2,
+.textosecaosobrenos h2 {
+  font-size: 35px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.textosecaonossossabores span,
+.textosecaonossoseventos span,
+.textosecaosobrenos span {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.textosecaonossossabores p,
+.textosecaonossoseventos p,
+.textosecaosobrenos p {
+  padding: 0 100px;
+  line-height: 26px;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+   .textosecaonossoseventos p,
+   .textosecaonossossabores p,
+   .textosecaosobrenos p {
+	 padding: 0px 50px
+   }
+}
+
+@media screen and (max-width: 768px){
+	.secaobanner img {
+		width: 435px;
+		height: auto;
+		object-fit: cover;
+		position: relative;
+		
+	}
+  .textobanner h1 {
+    font-size: 28px;
+    position: absolute;
+    text-align: center;
+    right: 35px;
+    bottom: 250px;
+  }
+
+  .secaonossossabores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secaonossossabores img {
+    width: 452px;
+    margin: auto;
+  }
+
+  .textosecaonossossabores,
+  .textosecaonossoseventos,
+  .textosecaosobrenos {
+    width: 100%;
+    padding: 100px 10px;
+    text-align: center;
+  }
+
+  .secaonossoseventos {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .secaonossoseventos img {
+    width: 452px;
+    margin: auto;
+  }
+
+  .secaosobrenos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secaosobrenos img {
+    width: 452px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .textobanner h1 {
+    font-size: 40px;
+  }
+
+  .textosecaonossoseventos h2,
+  .textosecaonossossabores h2,
+  .textosecaosobrenos h2 {
+	line-height: 40px;
+  }
+}
